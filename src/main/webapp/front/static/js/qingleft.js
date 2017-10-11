@@ -85,8 +85,8 @@ layui.define(['layer','laytpl','api','qingad','qingbqy'],function(exports){
 	    	  		<h2>联系我</h2>\
 	    	  	</div>\
 	    	  	<div class="qing-panel-body">\
-	    	  		<p class="am-text-left">邮箱：hunter@huding.me</p>\
-		            <p class="am-text-left">QQ交流群：545418785</p>\
+	    	  		<p class="am-text-left">邮箱：goto456@126.com</p>\
+		            <p class="am-text-left">QQ交流群：xxxx</p>\
 		            <!--<p class="am-text-left">\
 	            	       社交账号：\
 		                <a href="https://github.com/hujianhong" target="_blank"><span class="am-icon-github am-icon-fw am-icon-sm"></span></a>\

@@ -85,7 +85,7 @@ public class AppConfig extends JFinalConfig {
 	}
 
 	public static void main(String[] args) {
-		JFinal.start("WebRoot", 8080, "/luobo", 5);
+		JFinal.start("WebRoot", 8080, "/wengeblog", 5);
 	}
 
 	

@@ -9,7 +9,7 @@ layui.define(['layer','form','api'],function(exports){
 	
 	var refresh = {
 		change:function() {
-			var url = "/luobo/admin/validateCode?rand="+Math.random();
+			var url = "/wengeblog/admin/validateCode?rand="+Math.random();
 			$("#login-valicode").attr('src',url);
 		}
 	};

@@ -25,12 +25,12 @@ public class GeneratorDemo {
 
 	public static void gen(){
 		// base model 所使用的包名
-		String baseModelPackageName = "me.huding.luobo.model.base";
+		String baseModelPackageName = "com.goto456.model.base";
 		// base model 文件保存路径
-		String baseModelOutputDir = PathKit.getWebRootPath() + "/../src/me/huding/luobo/model/base";
+		String baseModelOutputDir = PathKit.getWebRootPath() + "/../src/com/goto456/model/base";
 
 		// model 所使用的包名 (MappingKit 默认使用的包名)
-		String modelPackageName = "me.huding.luobo.model";
+		String modelPackageName = "com.goto456.model";
 		// model 文件保存路径 (MappingKit 与 DataDictionary 文件默认保存路径)
 		String modelOutputDir = baseModelOutputDir + "/..";
 
