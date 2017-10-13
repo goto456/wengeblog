@@ -103,22 +103,13 @@ a:hover {
     color:#FFFFFF;
 }
 
-.wenge-logo {
-	margin-top: 0.7rem;
-	width: 40px;
-	height: 40px;
-	display: block;
-	text-indent: -666px;
-	background: url(../img/wenge40x40.png) no-repeat;
-}
-
 .wengeblog-logo {
     margin-top: 0.7rem;
     width: 150px;
     height: 40px;
     display: block;
     text-indent: -666px;
-    background: url(../img/wengeblog.png) no-repeat;
+    background: url(../img/logo121x40.png) no-repeat;
 }
 
 .qing-logo {
