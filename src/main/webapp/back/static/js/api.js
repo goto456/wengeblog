@@ -9,8 +9,9 @@ layui.define(['laytpl', 'laypage', 'layer'],function(exports) {
 	var layer = layui.layer;
 	var laytpl = layui.laytpl;
 	
-	var BASE_PREFIX = "http://localhost:8080/wengeblog/admin";
-	
+	// var BASE_PREFIX = "http://localhost:8080/wengeblog/admin";
+    var BASE_PREFIX = "http://101.200.212.38:8080/wengeblog/admin";
+
 	var pageSize = 10;
 	
 	var api = {
