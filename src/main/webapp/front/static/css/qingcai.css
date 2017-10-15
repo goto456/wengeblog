@@ -112,16 +112,6 @@ a:hover {
     background: url(../img/logo121x40.png) no-repeat;
 }
 
-.qing-logo {
-	margin-top: 0.7rem;
-	width: 150px;
-	height: 40px;
-	display: block;
-	text-indent: -666px;
-	background: url(../img/logo1.png) no-repeat;
-}
-
-
 #blog hr {
     margin:0.6rem 0;
 }
