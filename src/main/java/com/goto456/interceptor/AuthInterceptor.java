@@ -21,6 +21,8 @@ import com.goto456.back.AdminRoutes;
 import com.jfinal.aop.Interceptor;
 import com.jfinal.aop.Invocation;
 import com.jfinal.core.Controller;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * 
@@ -33,6 +35,7 @@ import com.jfinal.core.Controller;
  * @date 2016年10月29日
  */
 public class AuthInterceptor implements Interceptor {
+	private static final Logger logger = LoggerFactory.getLogger(AuthInterceptor.class);
 
 	/* (non-Javadoc)
 	 * @see com.jfinal.aop.Interceptor#intercept(com.jfinal.aop.Invocation)
@@ -40,6 +43,7 @@ public class AuthInterceptor implements Interceptor {
 	@Override
 	public void intercept(Invocation inv) {
 		String actionKey = inv.getActionKey();
+		logger.info("intercept..., actionKey: {}", actionKey);
 		if(actionKey.startsWith(AdminRoutes.PREFIX)){
 			Controller controller = inv.getController();
 			Object object = controller.getSessionAttr(IConstants.SESSION_USER_KEY);

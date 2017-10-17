@@ -25,6 +25,8 @@ import com.jfinal.kit.StrKit;
 
 import com.goto456.interceptor.AuthInterceptor;
 import com.goto456.model.User;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  *
@@ -34,6 +36,7 @@ import com.goto456.model.User;
  * @date 2016年10月28日
  */
 public class MainController extends BaseController {
+	private static final Logger logger = LoggerFactory.getLogger(MainController.class);
 	
 	
 	@Clear(AuthInterceptor.class)
@@ -48,10 +51,10 @@ public class MainController extends BaseController {
 	public void login(){
 		String username = getPara("username");
 		String password = getPara("password");
-		if(!validateCaptcha("valicode")){
-			render(ResConsts.Code.CODE_ERROR, "验证码错误");
-			return;
-		}
+//		if(!validateCaptcha("valicode")){
+//			render(ResConsts.Code.CODE_ERROR, "验证码错误");
+//			return;
+//		}
 		if(username == null || username.trim().length() == 0){
 			render(ResConsts.Code.USER_ERROR,"用户名不能为空");
 			return;
@@ -71,6 +74,8 @@ public class MainController extends BaseController {
 			setSessionAttr(IConstants.SESSION_USER_KEY, user);
 			setSessionAttr(IConstants.SESSION_USERID_KEY, user.getId());
 			render(ResConsts.Code.SUCCESS);
+			logger.info("login success. userId: {}", user.getId());
+			logger.info("seted session: {}", getSessionAttr(IConstants.SESSION_USERID_KEY) );
 			return;
 		} else {
 			render(ResConsts.Code.PASS_ERROR,"用户名或密码错误");
@@ -82,6 +87,7 @@ public class MainController extends BaseController {
 	 */
 	@Clear(AuthInterceptor.class)
 	public void checkLogin(){
+	    logger.info("check login, session: {}", getSessionAttr(IConstants.SESSION_USERID_KEY) );
 		if(getSessionAttr(IConstants.SESSION_USERID_KEY) != null){
 			render(ResConsts.Code.SUCCESS);
 		} else {
