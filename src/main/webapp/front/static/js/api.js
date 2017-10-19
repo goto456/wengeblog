@@ -9,7 +9,7 @@ layui.define(['layer'],function(exports) {
 	
 	
     // var BASE_PREFIX = "http://localhost:8080/wengeblog";
-    var BASE_PREFIX = "http://101.200.212.38:8080/wengeblog";
+    var BASE_PREFIX = "";
 
 	var pageSize = 10;
 	

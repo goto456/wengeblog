@@ -51,10 +51,10 @@ public class MainController extends BaseController {
 	public void login(){
 		String username = getPara("username");
 		String password = getPara("password");
-//		if(!validateCaptcha("valicode")){
-//			render(ResConsts.Code.CODE_ERROR, "验证码错误");
-//			return;
-//		}
+		if(!validateCaptcha("valicode")){
+			render(ResConsts.Code.CODE_ERROR, "验证码错误");
+			return;
+		}
 		if(username == null || username.trim().length() == 0){
 			render(ResConsts.Code.USER_ERROR,"用户名不能为空");
 			return;
