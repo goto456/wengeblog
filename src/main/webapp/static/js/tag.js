@@ -37,7 +37,7 @@ layui.define(['api','layer','laytpl','laypage','common','qingleft'], function(ex
 		       			<i class="am-icon-tags"></i>\
 		       		{{# } }}\
 		       		{{#  layui.each(item.tags, function(index, tag){ }}\
-		       				<span class="am-radius">#{{tag}}</span>\
+		       				<span class="am-radius">{{tag}}</span>\
 		       	  {{# });}}\
 	            <a href="{{item.url}}" class="qing-read-more">阅读全文>></a>\
 		       </div> \
