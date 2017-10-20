@@ -43,9 +43,10 @@ public class Parameters {
 	 * 
 	 * ../WebRoot/front/
 	 */
-	private static String FRONT_PATH = getParameter("FRONT_PATH",
-			"front");
-	
+//	private static String FRONT_PATH = getParameter("FRONT_PATH",
+//			"front");
+	private static String FRONT_PATH = getParameter("FRONT_PATH", "");
+
 	
 	public static String WEB_ROOT_PATH;
 	

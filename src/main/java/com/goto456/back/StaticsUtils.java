@@ -62,7 +62,8 @@ public class StaticsUtils {
 	 * @return
 	 */
 	public static String genHtmlURL(String baseURL,String value){
-		return baseURL + "/front/" + value;
+//		return baseURL + "/front/" + value;
+		return baseURL + "/" + value;
 	}
 	
 	public static boolean render(Blog bean) throws IOException {
