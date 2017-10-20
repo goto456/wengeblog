@@ -34,7 +34,8 @@ public class BaseController extends Controller {
 		String serverName = request.getServerName();
 		int port = request.getServerPort();
 		String scheme = request.getScheme();
-		String base = scheme +"://"+ serverName + ":" + port + context;
+//		String base = scheme +"://"+ serverName + ":" + port + context;
+		String base = scheme +"://"+ serverName;
 		return base;
 	}
 	
