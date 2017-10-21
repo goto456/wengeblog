@@ -12,6 +12,15 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/errorpage/404.html</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/errorpage/404.html</location>
+	</error-page>
+
 	<listener>
 		<listener-class>com.goto456.listener.ContextLoaderListener</listener-class>
 	</listener>
