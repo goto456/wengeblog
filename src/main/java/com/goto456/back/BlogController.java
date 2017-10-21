@@ -179,8 +179,9 @@ public class BlogController extends AbstarctBackController {
 		// html文件存储路径
 		blog.setPath(StaticsUtils.genHtmlFilePath(fileName));
 		// html文件url路径
-		blog.setUrl(StaticsUtils.genHtmlURL(getBaseURL(),fileName));
-		
+//		blog.setUrl(StaticsUtils.genHtmlURL(getBaseURL(),fileName));
+		blog.setUrl(fileName);
+
 		blog.setReadNum(0);
 		blog.setCommentNum(0);
 		blog.setHeartNum(0);

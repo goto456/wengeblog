@@ -64,7 +64,8 @@ public class UploadController extends BaseController {
 		if(uploadFile != null){
 			File file = uploadFile.getFile();
 			String filename  = file.getName();
-			String url = getBaseURL() + "/upload/" + filename;
+//			String url = getBaseURL() + "/upload/" + filename;
+			String url = "upload/" + filename;
 			setAttr("success", 1);
 			setAttr("msg", "");
 			setAttr("url", url);
