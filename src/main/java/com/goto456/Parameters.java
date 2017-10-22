@@ -31,7 +31,7 @@ public class Parameters {
 	/**
 	 *  sql文件根目录
 	 */
-	public static String SQL_PATH = ROOT_CLASS_PATH + File.separator + "qingcailuobo.sql";
+	public static String SQL_PATH = ROOT_CLASS_PATH + File.separator + "createTables.sql";
 
 	/** 
 	 * 浏览分页数据时每页大小
