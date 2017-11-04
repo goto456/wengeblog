@@ -37,12 +37,13 @@ layui.define(['common', 'api','form','layer','laytpl'], function(exports){
 		path: 'static/editor.md/lib/',
 		toolbarIcons:function(){
 			return  [
-	            "undo", "redo", "|", 
-	            "bold", "del", "italic", "quote", "uppercase", "lowercase", "|", 
-	            "h1", "h2", "h3", "|", 
-	            "list-ul", "list-ol", "hr", "|",
-	            "link", "reference-link", "image", "code", "preformatted-text", "code-block", "table", "datetime", "html-entities", "|",
-	            "watch","fullscreen", "clear", "search"
+                "undo", "redo", "|",
+                "bold", "del", "italic", "quote", "ucwords", "uppercase", "lowercase", "|",
+                "h1", "h2", "h3", "h4", "h5", "h6", "|",
+                "list-ul", "list-ol", "hr", "|",
+                "link", "reference-link", "image", "code", "preformatted-text", "code-block", "table", "datetime", "emoji", "html-entities", "pagebreak", "|",
+                "goto-line", "watch", "preview", "fullscreen", "clear", "search", "|",
+                "help", "info"
 	        ];
 		},
 		codeFold: true,
@@ -51,6 +52,10 @@ layui.define(['common', 'api','form','layer','laytpl'], function(exports){
 		watch : false,                // 关闭实时预览
 		htmlDecode: "style,script,iframe|on*", // 开启 HTML 标签解析，为了安全性，默认不开启    
 		taskList: true,
+		tocm: true,                  // Using [TOCM]
+		tex: true,                   // 开启科学公式TeX语言支持，默认关闭
+		flowChart: true,             // 开启流程图支持，默认关闭
+		sequenceDiagram: true,       // 开启时序/序列图支持，默认关闭,
 		imageUpload: true,
 		imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
 		imageUploadURL: api.UPLOAD_IMAGE_URL,
