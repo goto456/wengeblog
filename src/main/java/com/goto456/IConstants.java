@@ -44,9 +44,9 @@ public interface IConstants {
 
 	int REPORT = 0;
 
-	String EMAIL = "1043244432@qq.com";
+	String EMAIL = "goto456@126.com";
 
-	String AUTHOR = "胡建洪";
+	String AUTHOR = "goto456";
 
 	String SPCMT_MSG = "qingcailuobo-msg-cmt";
 

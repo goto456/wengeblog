@@ -41,7 +41,7 @@ public class DonateController extends AbstarctBackController {
 		String content = getPara("content");
 		String nickname = getPara("nikename");
 		if(nickname == null){
-			nickname = "胡建洪";
+			nickname = "goto456";
 		}
 		Comment comment = new Comment();
 		comment.setEmail(EMAIL);
