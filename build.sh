@@ -7,4 +7,4 @@
 #!/bin/bash
 
 mvn -U clean package
-cp target/*.war /usr/local/apache-tomcat-8.5.23/webapps
+cp target/*.war /home/goto456/Applications/apache-tomcat-8.5.23/webapps

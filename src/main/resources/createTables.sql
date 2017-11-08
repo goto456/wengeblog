@@ -110,6 +110,12 @@ CREATE TABLE `user` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+LOCK TABLES `user` WRITE;
+INSERT INTO `user` (`id`, `username`, `password`, `nickname`, `headurl`)
+VALUES
+(1,'admin','E10ADC3949BA59ABBE56E057F20F883E','admin','n');
+UNLOCK TABLES;
+
 
 CREATE TABLE `youlian` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
