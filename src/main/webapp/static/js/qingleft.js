@@ -130,7 +130,7 @@ layui.define(['layer','laytpl','api','qingad','qingbqy'],function(exports){
 					<span>{{item.readNum}}阅/{{item.commentNum}}评/{{item.heartNum}}赞</span>\
 				</div>\
 			{{# });}}\
-  		</<div>'
+  		</div>'
 		,
 		// 猜你喜欢模板
 		recommendBlogsTpl:
@@ -141,7 +141,7 @@ layui.define(['layer','laytpl','api','qingad','qingbqy'],function(exports){
 					<span>{{item.readNum}}阅/{{item.commentNum}}评/{{item.heartNum}}赞</span>\
 				</div>\
 			{{# });}}\
-  		</<div>'
+  		</div>'
 		,
 		// 最新博客模板
 		latestBlogsTpl:
@@ -152,7 +152,7 @@ layui.define(['layer','laytpl','api','qingad','qingbqy'],function(exports){
 					<span>{{item.readNum}}阅/{{item.commentNum}}评/{{item.heartNum}}赞</span>\
 				</div>\
 			{{# });}}\
-  		</<div>'
+  		</div>'
 		,
 		blogTimelineTpl:
 		'{{#  layui.each(d.data, function(index, item){ }}\
