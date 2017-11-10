@@ -54,7 +54,9 @@
 </script>
 <script>
     $(function () {
-        $("#header").load("header.html");
+        $("#header").load("header.html", function () {
+            $("#message").addClass("am-active");
+        });
         $("#footer").load("footer.html");
     });
 </script>

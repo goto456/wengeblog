@@ -73,7 +73,7 @@ layui.define(['api','layer','laytpl','laypage','common','qingleft'], function(ex
 						<span>{{item.readNum}}阅/{{item.commentNum}}评/{{item.heartNum}}赞</span>\
 					</div>\
 				{{# });}}\
-		  		</<div>\
+		  		</div>\
 		  	</div>\
 		  </div>'
 		  ,
